@@ -208,8 +208,7 @@ def xoxgame():
 	
 			while True:
 				try:
-					y=int(input("Enter the x coordinate: "))
-					x=int(input("Enter the y coordinate: "))
+					y, x = map(int, input("Enter x y coordinates: ").split())
 				
 					if x<m and y<n:
 						if table[x][y]==" ":
